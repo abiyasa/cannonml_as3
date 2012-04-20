@@ -1,0 +1,1044 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../../print.css" type="text/css" media="print">
+<meta content="Actor,org.si.cml.extensions.Actor,life,size,actorFactory,drawPriority,evalEnabled,evalIDNumber,_register,_unregister,draw,initialize,onCreate,onDestroy,onDraw,onFireObject,onHit,onNewObject,onUpdate,test,testf" name="keywords">
+<title>org.si.cml.extensions.Actor</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Actor - CannonML version 0.31 API Documentation';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">CannonML version 0.31 API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?org/si/cml/extensions/Actor.html&amp;org/si/cml/extensions/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Actor</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Actor"); titleBar_setSubNav(true,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">org.si.cml.extensions</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Actor</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Actor <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../images/inherit-arrow.gif"> <a href="ScopeLimitObject.html">ScopeLimitObject</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../images/inherit-arrow.gif"> <a href="../CMLObject.html">CMLObject</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../images/inherit-arrow.gif"> org.si.cml.core.CMLListElem</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Subclasses</td><td><a href="../../b3/CMLMovieClipSprite.html">CMLMovieClipSprite</a></td>
+</tr>
+</table>
+<p></p> Extension of CMLObject that implements scope, life, hit test, drawing priority and management of instances. <br/>
+      You have to call Actor.initialize() first, and you have to call CMLObject.update() and Actor.draw() for each frame.<br/>
+      Actor.initialize() registers some user define commands as below,
+      <ul>
+      <li>$life; Refers the value of Actor.life.</li>
+      <li>&scon; Enables the available scope.</li>
+      <li>&scoff; Disables the available scope.</li>
+      <li>&prior; Changes the drawing priority. Specify the priority (posi/nega value) in argument.</li>
+      </ul>
+     <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProperty" id="hideInheritedProperty">
+<a onclick="javascript:setInheritedVisible(false,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Properties</a>
+</div>
+<div class="showInheritedProperty" id="showInheritedProperty">
+<a onclick="javascript:setInheritedVisible(true,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Properties</a>
+</div>
+</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#actor">actor</a> : *<div class="summaryTableDescription"> You can rewrite this for your own purpose.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#actorFactory">actorFactory</a> : <a href="../extensions/ActorFactory.html">ActorFactory</a>
+<div class="summaryTableDescription">[read-only] Factory class </div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#angle">angle</a> : Number<div class="summaryTableDescription"> Angle of this object, scrolling direction is 0 degree.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#angleAccel">angleAccel</a> : Number<div class="summaryTableDescription"> Calculate direction of accelaration.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#angleOnStage">angleOnStage</a> : Number<div class="summaryTableDescription"> Angle of this object, The direction(1,0) is 0 degree.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#angleParentOnStage">angleParentOnStage</a> : Number<div class="summaryTableDescription"> Angle of this parent object, scrolling direction is 0 degree.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#anglePosition">anglePosition</a> : Number<div class="summaryTableDescription"> Calculate direction of position from origin.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#angleVelocity">angleVelocity</a> : Number<div class="summaryTableDescription"> Calculate direction of velocity.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ScopeLimitObject.html#defaultScopeHeight">defaultScopeHeight</a> : Number<div class="summaryTableDescription">[static] default scope height.</div>
+</td><td class="summaryTableOwnerCol"><a href="ScopeLimitObject.html">ScopeLimitObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ScopeLimitObject.html#defaultScopeWidth">defaultScopeWidth</a> : Number<div class="summaryTableDescription">[static] default scope width.</div>
+</td><td class="summaryTableOwnerCol"><a href="ScopeLimitObject.html">ScopeLimitObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ScopeLimitObject.html#defaultScopeXmax">defaultScopeXmax</a> : Number = 160<div class="summaryTableDescription">[static] default value of the available scopes range </div>
+</td><td class="summaryTableOwnerCol"><a href="ScopeLimitObject.html">ScopeLimitObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ScopeLimitObject.html#defaultScopeXmin">defaultScopeXmin</a> : Number = -160<div class="summaryTableDescription">[static] default value of the available scopes range </div>
+</td><td class="summaryTableOwnerCol"><a href="ScopeLimitObject.html">ScopeLimitObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ScopeLimitObject.html#defaultScopeYmax">defaultScopeYmax</a> : Number = 240<div class="summaryTableDescription">[static] default value of the available scopes range </div>
+</td><td class="summaryTableOwnerCol"><a href="ScopeLimitObject.html">ScopeLimitObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ScopeLimitObject.html#defaultScopeYmin">defaultScopeYmin</a> : Number = -240<div class="summaryTableDescription">[static] default value of the available scopes range </div>
+</td><td class="summaryTableOwnerCol"><a href="ScopeLimitObject.html">ScopeLimitObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#destructionStatus">destructionStatus</a> : int<div class="summaryTableDescription"> Destruction status.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#drawPriority">drawPriority</a> : int<div class="summaryTableDescription"> Set the drawing priority.</div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#evalEnabled">evalEnabled</a> : Boolean<div class="summaryTableDescription"> Enable/disable the hit test.</div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#evalIDNumber">evalIDNumber</a> : int<div class="summaryTableDescription"> Set the devaluation ID number.</div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#frameRateRatio">frameRateRatio</a> : Number<div class="summaryTableDescription">[static] Value of (frame rate to calculate speed) / (screen frame rate).</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#funcRand">funcRand</a> : Function<div class="summaryTableDescription">[static] Function for "$?/$??" variable, The type is function():Number.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#globalRank">globalRank</a> : Number<div class="summaryTableDescription">[static] Variable for "$r" </div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#hasParts">hasParts</a> : Boolean<div class="summaryTableDescription"> Does this object have another object as a part ? </div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#id">id</a> : uint<div class="summaryTableDescription"> Construction ID, this value changes when the object is destroyed.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#isActive">isActive</a> : Boolean<div class="summaryTableDescription"> Is this object on stage ? </div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ScopeLimitObject.html#isEscaped">isEscaped</a> : Boolean<div class="summaryTableDescription"> Did this object escape from the scope ? </div>
+</td><td class="summaryTableOwnerCol"><a href="ScopeLimitObject.html">ScopeLimitObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#isPart">isPart</a> : Boolean<div class="summaryTableDescription"> Is this object a part of its parent ? The part object's position is relative to parent's position.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#life">life</a> : Number = 1<div class="summaryTableDescription"> Life, you can use this as you like.</div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#motion_type">motion_type</a> : uint<div class="summaryTableDescription"> Motion type.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#parent">parent</a> : <a href="../../cml/CMLObject.html">CMLObject</a>
+<div class="summaryTableDescription"> The CMLObject that creates this object.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#rank">rank</a> : Number<div class="summaryTableDescription"> You can define the "$r" value for each object by overriding this property, Ussualy returns CMLObject.globalRank.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#relatedX">relatedX</a> : Number<div class="summaryTableDescription"> The x value of position parent related </div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#relatedY">relatedY</a> : Number<div class="summaryTableDescription"> The y value of position parent related </div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#root">root</a> : <a href="../../cml/CMLObject.html">CMLObject</a>
+<div class="summaryTableDescription">[static] root object is the default parent of all CMLObjects that are created with the argument of parent=null.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ScopeLimitObject.html#scopeEnabled">scopeEnabled</a> : Boolean = true<div class="summaryTableDescription"> The availabirity of scope check </div>
+</td><td class="summaryTableOwnerCol"><a href="ScopeLimitObject.html">ScopeLimitObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ScopeLimitObject.html#scopeHeight">scopeHeight</a> : Number<div class="summaryTableDescription"> Scope height </div>
+</td><td class="summaryTableOwnerCol"><a href="ScopeLimitObject.html">ScopeLimitObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ScopeLimitObject.html#scopeWidth">scopeWidth</a> : Number<div class="summaryTableDescription"> Scope width </div>
+</td><td class="summaryTableOwnerCol"><a href="ScopeLimitObject.html">ScopeLimitObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ScopeLimitObject.html#scopeXmax">scopeXmax</a> : Number<div class="summaryTableDescription"> Maxmum x value of the available scope.</div>
+</td><td class="summaryTableOwnerCol"><a href="ScopeLimitObject.html">ScopeLimitObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ScopeLimitObject.html#scopeXmin">scopeXmin</a> : Number<div class="summaryTableDescription"> Minimum x value of the available scope.</div>
+</td><td class="summaryTableOwnerCol"><a href="ScopeLimitObject.html">ScopeLimitObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ScopeLimitObject.html#scopeYmax">scopeYmax</a> : Number<div class="summaryTableDescription"> Maximum y value of the available scope.</div>
+</td><td class="summaryTableOwnerCol"><a href="ScopeLimitObject.html">ScopeLimitObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ScopeLimitObject.html#scopeYmin">scopeYmin</a> : Number<div class="summaryTableDescription"> Minimum y value of the available scope.</div>
+</td><td class="summaryTableOwnerCol"><a href="ScopeLimitObject.html">ScopeLimitObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#scrollAngle">scrollAngle</a> : Number<div class="summaryTableDescription">[static] Scrolling angle (vertical=-90, horizontal=180).</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#size">size</a> : Number = 0<div class="summaryTableDescription"> Size to use in hit test </div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#velocity">velocity</a> : Number<div class="summaryTableDescription"> Absolute value of velocity.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#vertical">vertical</a> : int<div class="summaryTableDescription">[static] Flag for scrolling direction (vertical=1, horizontal=0).</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#vx">vx</a> : Number = 0<div class="summaryTableDescription"> X value of velocity.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#vy">vy</a> : Number = 0<div class="summaryTableDescription"> Y value of velocity.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#x">x</a> : Number = 0<div class="summaryTableDescription"> X value of position.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#y">y</a> : Number = 0<div class="summaryTableDescription"> Y value of position.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<div class="showHideLinks">
+<div class="hideInheritedMethod" id="hideInheritedMethod">
+<a onclick="javascript:setInheritedVisible(false,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Methods</a>
+</div>
+<div class="showInheritedMethod" id="showInheritedMethod">
+<a onclick="javascript:setInheritedVisible(true,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Methods</a>
+</div>
+</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#Actor()">Actor</a>()</div>
+<div class="summaryTableDescription"> Constructor </div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#changeParent()">changeParent</a>(parent_:<a href="../../cml/CMLObject.html">CMLObject</a> = null, isPart_:Boolean = false, access_id_:int):void</div>
+<div class="summaryTableDescription"> Change parent.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ScopeLimitObject.html#checkScope()">checkScope</a>():Boolean</div>
+<div class="summaryTableDescription"> Check scope and call destroy(0) when escaped.</div>
+</td><td class="summaryTableOwnerCol"><a href="ScopeLimitObject.html">ScopeLimitObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#countAllIDedChildren()">countAllIDedChildren</a>():int</div>
+<div class="summaryTableDescription"> Count all children with access id.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#countIDedChildren()">countIDedChildren</a>(id:int):int</div>
+<div class="summaryTableDescription"> Count children with specifyed id.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#create()">create</a>(x_:Number, y_:Number, parent_:<a href="../../cml/CMLObject.html">CMLObject</a> = null, isPart_:Boolean = false, access_id_:int):<a href="../../cml/CMLObject.html">CMLObject</a>
+</div>
+<div class="summaryTableDescription"> Create new object on the CML stage.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#destroy()">destroy</a>(status:int):void</div>
+<div class="summaryTableDescription"> Destroy this object.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#destroyAll()">destroyAll</a>(status:int):void</div>
+<div class="summaryTableDescription">[static] Destroy all active objects except for root.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#draw()">draw</a>():void</div>
+<div class="summaryTableDescription">[static] <b>Call this function for each frame</b> to call all onDraw()s.</div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#execute()">execute</a>(seq:<a href="../../cml/CMLSequence.html">CMLSequence</a>, args:Array = null, invertFlag:uint = 0):<a href="../../cml/CMLFiber.html">CMLFiber</a>
+</div>
+<div class="summaryTableDescription"> Execute a sequence and create a new fiber.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ScopeLimitObject.html#expandScope()">expandScope</a>(x:Number, y:Number):void</div>
+<div class="summaryTableDescription"> Expand scope size from defaultScope.</div>
+</td><td class="summaryTableOwnerCol"><a href="ScopeLimitObject.html">ScopeLimitObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#findAllChildren()">findAllChildren</a>(id:int, func:Function):int</div>
+<div class="summaryTableDescription"> Find all child and callback.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#findAllParts()">findAllParts</a>(func:Function):int</div>
+<div class="summaryTableDescription"> Find all parts and callback.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#findChild()">findChild</a>(id:int):<a href="../../cml/CMLObject.html">CMLObject</a>
+</div>
+<div class="summaryTableDescription"> Find first child object with specifyed id.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#getAimingAngle()">getAimingAngle</a>(target_:<a href="../../cml/CMLObject.html">CMLObject</a>, offx:Number = 0, offy:Number = 0):Number</div>
+<div class="summaryTableDescription"> Calculate aiming angle to another object.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#getDistance()">getDistance</a>(tgt:<a href="../../cml/CMLObject.html">CMLObject</a>):Number</div>
+<div class="summaryTableDescription"> Calculate distance from another object aproximately.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#halt()">halt</a>():void</div>
+<div class="summaryTableDescription"> Destroy all fibers of this object.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#initialize()">initialize</a>(vertical_:Boolean = true):<a href="../../cml/CMLObject.html">CMLObject</a>
+</div>
+<div class="summaryTableDescription">[static] <b>Call this function first of all</b> instead of CMLObject.initialize().</div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ScopeLimitObject.html#limitScope()">limitScope</a>():Boolean</div>
+<div class="summaryTableDescription"> Check scope and stay inside of scope.</div>
+</td><td class="summaryTableOwnerCol"><a href="ScopeLimitObject.html">ScopeLimitObject</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#onCreate()">onCreate</a>():void</div>
+<div class="summaryTableDescription">  Callback function on create.</div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#onDestroy()">onDestroy</a>():void</div>
+<div class="summaryTableDescription">  Callback function on destroy.</div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#onDraw()">onDraw</a>():void</div>
+<div class="summaryTableDescription"> Callback function to draw.</div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#onFireObject()">onFireObject</a>(args:Array):<a href="../../cml/CMLObject.html">CMLObject</a>
+</div>
+<div class="summaryTableDescription">  Statement "f" calls this when it needs.</div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#onHit()">onHit</a>(act:<a href="Actor.html">Actor</a>):void</div>
+<div class="summaryTableDescription"> Callback function from Actor.test() when the hit test is true.</div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#onNewObject()">onNewObject</a>(args:Array):<a href="../../cml/CMLObject.html">CMLObject</a>
+</div>
+<div class="summaryTableDescription">  Statement "n" calls this when it needs.</div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#onUpdate()">onUpdate</a>():void</div>
+<div class="summaryTableDescription">   Callback function from CMLObject.update().</div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#rand()">rand</a>():Number</div>
+<div class="summaryTableDescription">[static] The return value is from CMLObject.funcRand.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#reset()">reset</a>(x_:Number, y_:Number):<a href="../../cml/CMLObject.html">CMLObject</a>
+</div>
+<div class="summaryTableDescription"> Reset position, velocity, accelaration, interpolation, motion type and rotation.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#setAccelaration()">setAccelaration</a>(ax_:Number, ay_:Number, time_:int = 0):<a href="../../cml/CMLObject.html">CMLObject</a>
+</div>
+<div class="summaryTableDescription"> Set accelaration.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#setAsDefaultTarget()">setAsDefaultTarget</a>():<a href="../../cml/CMLObject.html">CMLObject</a>
+</div>
+<div class="summaryTableDescription"> Set as a default target object.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#setChangeDirection()">setChangeDirection</a>(dir:Number, term:int, rmax:Number, shortest_rot:Boolean = true):<a href="../../cml/CMLObject.html">CMLObject</a>
+</div>
+<div class="summaryTableDescription"> &lt;changeDirection type='absolute'&gt; of bulletML.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#setChangeSpeed()">setChangeSpeed</a>(spd:Number, term:int = 0):<a href="../../cml/CMLObject.html">CMLObject</a>
+</div>
+<div class="summaryTableDescription"> &lt;changeSpeed type='absolute'&gt; of bulletML.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#setConstantRotation()">setConstantRotation</a>(end_angle:Number, term:Number = 0, rmax:Number = 1, isShortestRotation:Boolean = true):<a href="../../cml/CMLObject.html">CMLObject</a>
+</div>
+<div class="summaryTableDescription"> Set constant rotation.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ScopeLimitObject.html#setDefaultScope()">setDefaultScope</a>(x:Number, y:Number, width:Number, height:Number):void</div>
+<div class="summaryTableDescription">[static] set default scope rectangle.</div>
+</td><td class="summaryTableOwnerCol"><a href="ScopeLimitObject.html">ScopeLimitObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#setGlobalRankRange()">setGlobalRankRange</a>(min:Number, max:Number):void</div>
+<div class="summaryTableDescription">[static] Set the range of globalRank.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#setGravity()">setGravity</a>(atr_a:Number, atr_b:Number, term:int = 0):<a href="../../cml/CMLObject.html">CMLObject</a>
+</div>
+<div class="summaryTableDescription"> Set gravity motion.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#setInterpolation()">setInterpolation</a>(x_:Number, y_:Number, vx_:Number, vy_:Number, term_:int = 0):<a href="../../cml/CMLObject.html">CMLObject</a>
+</div>
+<div class="summaryTableDescription"> Set interpolating motion.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#setPosition()">setPosition</a>(x_:Number, y_:Number, term_:int = 0):<a href="../../cml/CMLObject.html">CMLObject</a>
+</div>
+<div class="summaryTableDescription"> Set position.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#setRotation()">setRotation</a>(end_angle:Number, term:Number = 0, start_t:Number = 1, end_t:Number = 1, isShortestRotation:Boolean = true):<a href="../../cml/CMLObject.html">CMLObject</a>
+</div>
+<div class="summaryTableDescription"> Set rotation.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#setVelocity()">setVelocity</a>(vx_:Number, vy_:Number, term_:int = 0):<a href="../../cml/CMLObject.html">CMLObject</a>
+</div>
+<div class="summaryTableDescription"> Set velocity.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#test()">test</a>(evalID0:int, evalID1:int):void</div>
+<div class="summaryTableDescription">[static] Hit test of 2 instances.</div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#testf()">testf</a>(evalID0:int, evalID1:int):void</div>
+<div class="summaryTableDescription">[static] Hit test of 2 instances, lazyer and faster.</div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#transformGlobalToLocal()">transformGlobalToLocal</a>(global:Point):Point</div>
+<div class="summaryTableDescription"> transform global coordinate to object local coordinate
+          </div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#transformLocalToGlobal()">transformLocalToGlobal</a>(local:Point):Point</div>
+<div class="summaryTableDescription"> transform object local coordinate to global coordinate 
+          </div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#update()">update</a>():void</div>
+<div class="summaryTableDescription">[static] <b>Call this function for each frame</b>.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+</table>
+</div>
+<a name="protectedMethodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Methods</div>
+<div class="showHideLinks">
+<div class="hideInheritedProtectedMethod" id="hideInheritedProtectedMethod">
+<a onclick="javascript:setInheritedVisible(false,'ProtectedMethod');" href="#protectedMethodSummary" class="showHideLink"><img src="../../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Protected Methods</a>
+</div>
+<div class="showInheritedProtectedMethod" id="showInheritedProtectedMethod">
+<a onclick="javascript:setInheritedVisible(true,'ProtectedMethod');" href="#protectedMethodSummary" class="showHideLink"><img src="../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Protected Methods</a>
+</div>
+</div>
+<table id="summaryTableProtectedMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#_register()">_register</a>():void</div>
+<div class="summaryTableDescription"> Register this object on the actor list.</div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#_unregister()">_unregister</a>():void</div>
+<div class="summaryTableDescription"> Unregister this object from the actor list.</div>
+</td><td class="summaryTableOwnerCol">Actor</td>
+</tr>
+<tr class="hideInheritedProtectedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#calcAbsPosition()">calcAbsPosition</a>():void</div>
+<div class="summaryTableDescription"> Calculate absolute position when the isPart is true.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProtectedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#calcRelatedPosition()">calcRelatedPosition</a>():void</div>
+<div class="summaryTableDescription"> Calculate parent related position from absolute position.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedProtectedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../CMLObject.html#rotateHead()">rotateHead</a>():void</div>
+<div class="summaryTableDescription"> Rotate haed in 1 frame, if rotd > 0.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<div class="showHideLinks">
+<div class="hideInheritedConstant" id="hideInheritedConstant">
+<a onclick="javascript:setInheritedVisible(false,'Constant');" href="#constantSummary" class="showHideLink"><img src="../../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Constants</a>
+</div>
+<div class="showInheritedConstant" id="showInheritedConstant">
+<a onclick="javascript:setInheritedVisible(true,'Constant');" href="#constantSummary" class="showHideLink"><img src="../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Constants</a>
+</div>
+</div>
+<table id="summaryTableConstant" class="summaryTable hideInheritedConstant" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedConstant">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#MT_ACCEL">MT_ACCEL</a> : uint = 1<div class="summaryTableDescription">[static] Number for CMLObject.motion_type, Accelarating motion.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedConstant">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#MT_BULLETML">MT_BULLETML</a> : uint = 3<div class="summaryTableDescription">[static] Number for CMLObject.motion_type, BulletML compatible motion.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedConstant">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#MT_CONST">MT_CONST</a> : uint = 0<div class="summaryTableDescription">[static] Number for CMLObject.motion_type, Linear motion.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedConstant">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#MT_GRAVITY">MT_GRAVITY</a> : uint = 4<div class="summaryTableDescription">[static] Number for CMLObject.motion_type, Gravity motion.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedConstant">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#MT_INTERPOL">MT_INTERPOL</a> : uint = 2<div class="summaryTableDescription">[static] Number for CMLObject.motion_type, 3D-Bezier interpolating motion.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedConstant">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#MT_PART_ACCEL">MT_PART_ACCEL</a> : uint<div class="summaryTableDescription">[static] Number for CMLObject.motion_type, Accelarating motion of parts.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedConstant">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#MT_PART_BULLETML">MT_PART_BULLETML</a> : uint<div class="summaryTableDescription">[static] Number for CMLObject.motion_type, BulletML compatible motion of parts.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedConstant">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#MT_PART_CONST">MT_PART_CONST</a> : uint<div class="summaryTableDescription">[static] Number for CMLObject.motion_type, Linear motion of parts.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+<tr class="hideInheritedConstant">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../CMLObject.html#MT_PART_INTERPOL">MT_PART_INTERPOL</a> : uint<div class="summaryTableDescription">[static] Number for CMLObject.motion_type, 3D-Bezier interpolating motion of parts.</div>
+</td><td class="summaryTableOwnerCol"><a href="../CMLObject.html">CMLObject</a></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="actorFactory"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">actorFactory</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>actorFactory:<a href="../extensions/ActorFactory.html">ActorFactory</a></code>&nbsp;&nbsp;[read-only]<p> Factory class </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get actorFactory():<a href="../extensions/ActorFactory.html">ActorFactory</a></code>
+<br>
+</div>
+<a name="drawPriority"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">drawPriority</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>drawPriority:int</code>&nbsp;&nbsp;[read-write]<p> Set the drawing priority. -1 to reset as default priority </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get drawPriority():int</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set drawPriority(value:int):void</code>
+<br>
+</div>
+<a name="evalEnabled"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">evalEnabled</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>evalEnabled:Boolean</code>&nbsp;&nbsp;[read-write]<p> Enable/disable the hit test. </p><p>The default value is <code>true</code>.</p>
+<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get evalEnabled():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set evalEnabled(value:Boolean):void</code>
+<br>
+</div>
+<a name="evalIDNumber"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">evalIDNumber</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>evalIDNumber:int</code>&nbsp;&nbsp;[read-write]<p> Set the devaluation ID number. -1 to reset as default priority </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get evalIDNumber():int</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set evalIDNumber(value:int):void</code>
+<br>
+</div>
+<a name="life"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">life</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var life:Number = 1</code><p> Life, you can use this as you like. </p></div>
+<a name="size"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">size</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var size:Number = 0</code><p> Size to use in hit test </p></div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="Actor()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">Actor</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function Actor()</code><p> Constructor </p></div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="_register()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_register</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function _register():void</code><p> Register this object on the actor list. </p></div>
+<a name="_unregister()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_unregister</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function _unregister():void</code><p> Unregister this object from the actor list. </p></div>
+<a name="draw()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">draw</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function draw():void</code><p> <b>Call this function for each frame</b> to call all onDraw()s. </p></div>
+<a name="initialize()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">initialize</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function initialize(vertical_:Boolean = true):<a href="../../cml/CMLObject.html">CMLObject</a></code><p> <b>Call this function first of all</b> instead of CMLObject.initialize(). 
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">vertical_</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; Flag of scrolling direction
+          </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../cml/CMLObject.html">CMLObject</a></code> &mdash; 
+                        The root object.
+          
+                        
+                     </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Actor.html#onPreCreate()" target="">Actor.onPreCreate()</a>
+</div>
+</div>
+<a name="onCreate()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onCreate</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function onCreate():void</code><p>  Callback function on create. Override this to initialize.</p></div>
+<a name="onDestroy()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onDestroy</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function onDestroy():void</code><p>  Callback function on destroy. Override this to finalize.
+          </p></div>
+<a name="onDraw()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onDraw</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function onDraw():void</code><p> Callback function to draw. This function is called in the order of the property drawPriority. </p></div>
+<a name="onFireObject()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onFireObject</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function onFireObject(args:Array):<a href="../../cml/CMLObject.html">CMLObject</a></code><p>  Statement "f" calls this when it needs. Override this to define the new CMLObject created by "f" command.
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">args</span>:Array</code> &mdash; The arguments of sequence.
+          </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../cml/CMLObject.html">CMLObject</a></code> &mdash; 
+                        The new CMLObject created by "n" command. You must not activate(call create()) returning CMLObject.
+         
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="onHit()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onHit</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function onHit(act:<a href="Actor.html">Actor</a>):void</code><p> Callback function from Actor.test() when the hit test is true. </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">act</span>:<a href="Actor.html">Actor</a></code></td>
+</tr>
+</table>
+</div>
+<a name="onNewObject()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onNewObject</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function onNewObject(args:Array):<a href="../../cml/CMLObject.html">CMLObject</a></code><p>  Statement "n" calls this when it needs. Override this to define the new CMLObject created by "n" command.
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">args</span>:Array</code> &mdash; The arguments of sequence.
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../cml/CMLObject.html">CMLObject</a></code> &mdash; 
+                        The new CMLObject created by "n" command. You must not activate(call create()) returning CMLObject.
+         
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="onUpdate()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onUpdate</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function onUpdate():void</code><p>   Callback function from CMLObject.update(). This function is called after updating position. Override this to update own parameters.</p></div>
+<a name="test()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">test</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function test(evalID0:int, evalID1:int):void</code><p> Hit test of 2 instances. Each Actor.onHit() is called when hit test is success.
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">evalID0</span>:int</code> &mdash; evaluation ID number of 1st target ActorFactory. Optimum for slower actor.
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">evalID1</span>:int</code> &mdash; evaluation ID number of 2nd target ActorFactory. Optimum for faster actor.
+          </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="ActorFactory.html#evalIDNumber" target="">ActorFactory.evalIDNumber</a>
+</div>
+</div>
+<a name="testf()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">testf</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function testf(evalID0:int, evalID1:int):void</code><p> Hit test of 2 instances, lazyer and faster. Each Actor.onHit() is called when hit test is success.
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">evalID0</span>:int</code> &mdash; evaluation ID number of 1st target ActorFactory. 
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">evalID1</span>:int</code> &mdash; evaluation ID number of 2nd target ActorFactory. 
+          </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="ActorFactory.html#evalIDNumber" target="">ActorFactory.evalIDNumber</a>
+</div>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

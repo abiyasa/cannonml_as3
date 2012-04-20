@@ -1,0 +1,497 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="CMLSequence,org.si.cml.CMLSequence,childSequence,global,isEmpty,label,clear,findSequence,getParameter,parse,registerUserCommand,registerUserValiable" name="keywords">
+<title>org.si.cml.CMLSequence</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'CMLSequence - CannonML version 0.31 API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">CannonML version 0.31 API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?org/si/cml/CMLSequence.html&amp;org/si/cml/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;CMLSequence</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class CMLSequence"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">org.si.cml</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class CMLSequence</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">CMLSequence <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> org.si.cml.core.CMLState</td>
+</tr>
+</table>
+<p></p> Class for the sequences created from the cannonML or the bulletML.
+      <p>
+      USAGE<br/>
+      1) CMLSequence(cannonML_String or bulletML_XML); creates a new sequence from certain cannonML/bulletML.<br/>
+      2) CMLObject.execute(CMLSequence); apply sequence to CMLObject.<br/>
+      3) CMLSequence.global; makes it global. You can access the child sequences of global sequence from everywhere.<br/>
+      4) CMLSequence.findSequence(); finds labeled sequence in cannonML/bulletML.<br/>
+      5) CMLSequence.getParameter(); accesses parameters of sequence.<br/>
+      6) CMLSequence.registerUserCommand(); registers the function called from cannonML.<br/>
+      7) CMLSequence.registerUserVariable(); registers the function refered by cannonML.<br/>
+      </p>
+     <p></p>
+<br>
+<span class="label">Example</span>
+<br>Typical usage.
+<div class='listing'><pre>
+// Create enemys sequence from "String of cannonML" or "XML of bulletML".
+var motion:CMLSequence = new CMLSequence(String or XML);
+
+ ...
+
+enemy.create(x, y);                                     // Create enemy on the stage.
+enemy.execute(motion);                                  // Execute sequence.
+</pre></div>
+     <p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="CMLObject.html#execute()" target="">CMLObject.execute()</a>
+<br>
+<a href="CMLSequence.html#CMLSequence()" target="">CMLSequence.CMLSequence()</a>
+<br>
+<a href="CMLSequence.html#global" target="">CMLSequence.global</a>
+<br>
+<a href="CMLSequence.html#findSequence()" target="">CMLSequence.findSequence()</a>
+<br>
+<a href="CMLSequence.html#getParameter()" target="">CMLSequence.getParameter()</a>
+<br>
+<a href="CMLSequence.html#registerUserCommand()" target="">CMLSequence.registerUserCommand()</a>
+<br>
+<a href="CMLSequence.html#registerUserVariable()" target="">CMLSequence.registerUserVariable()</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#childSequence">childSequence</a> : *<div class="summaryTableDescription">[read-only] dictionary of child sequence, you can access by label </div>
+</td><td class="summaryTableOwnerCol">CMLSequence</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#global">global</a> : Boolean<div class="summaryTableDescription"> Flag of global sequence.</div>
+</td><td class="summaryTableOwnerCol">CMLSequence</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#isEmpty">isEmpty</a> : Boolean<div class="summaryTableDescription">[read-only] Is this sequence empty ? </div>
+</td><td class="summaryTableOwnerCol">CMLSequence</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#label">label</a> : String<div class="summaryTableDescription">[read-only] label of this sequence </div>
+</td><td class="summaryTableOwnerCol">CMLSequence</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#CMLSequence()">CMLSequence</a>(data:* = null, globalSequence:Boolean = false)</div>
+<div class="summaryTableDescription"> Construct new sequence by a String of cannonML or an XML of bulletML.</div>
+</td><td class="summaryTableOwnerCol">CMLSequence</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clear()">clear</a>():void</div>
+<div class="summaryTableDescription"> Make this sequence empty.</div>
+</td><td class="summaryTableOwnerCol">CMLSequence</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#findSequence()">findSequence</a>(label_:String):<a href="../cml/CMLSequence.html">CMLSequence</a>
+</div>
+<div class="summaryTableDescription"> Find child sequence that has specifyed label.</div>
+</td><td class="summaryTableOwnerCol">CMLSequence</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getParameter()">getParameter</a>(idx:uint):Number</div>
+<div class="summaryTableDescription"> Get parameter of this sequence.</div>
+</td><td class="summaryTableOwnerCol">CMLSequence</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#parse()">parse</a>(data:*):void</div>
+<div class="summaryTableDescription"> Parse CannonML-String or BulletML-XML.</div>
+</td><td class="summaryTableOwnerCol">CMLSequence</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#registerUserCommand()">registerUserCommand</a>(name:String, func:Function, argc:int = 0, requireSequence:Boolean = false):void</div>
+<div class="summaryTableDescription">[static] Register user defined command "&[a-z_]+".</div>
+</td><td class="summaryTableOwnerCol">CMLSequence</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#registerUserValiable()">registerUserValiable</a>(name:String, func:Function):void</div>
+<div class="summaryTableDescription">[static] Register user defined variable "$[a-z_]+".</div>
+</td><td class="summaryTableOwnerCol">CMLSequence</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="childSequence"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">childSequence</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>childSequence:*</code>&nbsp;&nbsp;[read-only]<p> dictionary of child sequence, you can access by label </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get childSequence():*</code>
+<br>
+</div>
+<a name="global"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">global</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>global:Boolean</code>&nbsp;&nbsp;[read-write]<p> Flag of global sequence.
+          </p><p>
+          Child sequences of a global sequence are accessable from other sequences.<br/>
+          </p>
+<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get global():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set global(value:Boolean):void</code>
+<br>
+<br>
+<span class="label">Example</span>
+<br><div class='listing'><pre>
+var seqG:CMLSequence = new CMLSequence("#LABEL_G{...}");
+
+seqG.global = true;
+var seqA:CMLSequence = new CMLSequence("&LABEL_G");    // Success; you can refer the LABEL_G.
+
+seqG.global = false;
+var seqB:CMLSequence = new CMLSequence("&LABEL_G");    // Error; you cannot refer the LABEL_G.
+</pre></div>
+         <p></p>
+</div>
+<a name="isEmpty"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">isEmpty</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>isEmpty:Boolean</code>&nbsp;&nbsp;[read-only]<p> Is this sequence empty ? </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get isEmpty():Boolean</code>
+<br>
+</div>
+<a name="label"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">label</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>label:String</code>&nbsp;&nbsp;[read-only]<p> label of this sequence </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get label():String</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="CMLSequence()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">CMLSequence</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function CMLSequence(data:* = null, globalSequence:Boolean = false)</code><p> Construct new sequence by a String of cannonML or an XML of bulletML.
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">data</span>:*</code> (default = <code>null</code>)<code></code> &mdash; Sequence data. Intstance of String or XML is available. String data is for CannonML, and XML data is for BulletML.
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">globalSequence</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Flag of global sequence.
+         </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="clear()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clear</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function clear():void</code><p> Make this sequence empty.
+          </p><p>
+          This function disconnects all statement chains and enable to be caught by GC.
+          </p>
+         </div>
+<a name="findSequence()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">findSequence</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function findSequence(label_:String):<a href="../cml/CMLSequence.html">CMLSequence</a></code><p> Find child sequence that has specifyed label.
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">label_</span>:String</code> &mdash; to find.
+          </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../cml/CMLSequence.html">CMLSequence</a></code> &mdash; 
+                        Found sequence.
+
+                        
+                     </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br><div class='listing'><pre>
+// You can access the child sequence.
+var seq:CMLSequence = new CMLSequence("#A{v0,2[w30f3]}");
+var seqA:CMLSequence = seq.findSequence("A");       // seqA is "v0,2[w30f]".
+
+// You can use the access operator.
+var seq:CMLSequence = new CMLSequence("#A{ #B{v0,2[w30f4]} #C{v0,4[w10f2]} }");
+var seqAB:CMLSequence = seq.findSequence("A.B");    // seqAB is "v0,2[w30f4]". Same as seq.findSequence("A").findSequence("B")
+var seqAC:CMLSequence = seq.findSequence("A.C");    // seqAB is "v0,4[w10f2]". Same as seq.findSequence("A").findSequence("C")
+</pre></div>
+         <p></p>
+</div>
+<a name="getParameter()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getParameter</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getParameter(idx:uint):Number</code><p> Get parameter of this sequence.
+          </p><p>
+          This function gives the parameters of this sequence.<br/>
+          Parameters of a sequence are shown like "#LABEL{0,1,2 ... }" in cml-string.
+          </p>
+          <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">idx</span>:uint</code> &mdash; Index of argument.
+          </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; Value of argument.
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br><div class='listing'><pre>
+var seq:CMLSequence = new CMLSequence("#A{10,20 v0,2[w30f3]}");
+var seqA:CMLSequence = seq.findSequence("A");
+trace(seqA.getParameter(0), seqA.getParameter(1), seqA.getParameter(2));    // 10, 20, 0
+</pre></div>
+         <p></p>
+</div>
+<a name="parse()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">parse</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function parse(data:*):void</code><p> Parse CannonML-String or BulletML-XML.
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">data</span>:*</code> &mdash; or XML is avairable. String is for CannonML, and XML is for BulletML.
+         </td>
+</tr>
+</table>
+</div>
+<a name="registerUserCommand()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">registerUserCommand</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function registerUserCommand(name:String, func:Function, argc:int = 0, requireSequence:Boolean = false):void</code><p> Register user defined command "&[a-z_]+".
+          </p><p>
+          This function registers the command that can use in CML string. <br/>
+          </p>
+          <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:String</code> &mdash; The name of command that appears like "&name" in CML string.
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">func</span>:Function</code> &mdash; The callback function when the command appears in sequence.<br/>
+          The type of callback is <code>function(fbr:CMLFiber, args:Array):void</code>.
+          The 1st argument gives a reference of the fiber that execute the sequence.
+          And the 2nd argument gives the arguments of the command.
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">argc</span>:int</code> (default = <code>0</code>)<code></code> &mdash; The count of argument that this command requires.<br/>
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">requireSequence</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Specify true if this command require the sequence as the '&', '</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="CMLFiber.html" target="">CMLFiber</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>
+<div class='listing'><pre>
+// In the cml-string, you can use "&sound[sound_index],[volume]" that plays sound.
+CMLSequence.registerUserCommand("sound", playSound, 2);
+
+function playSound(fbr:CMLFiber, args:Array) : void
+{
+    // function _playSound(index, volume) plays sound.
+    if (args.length >= 2) _playSound(args[0], args[1]);
+}
+</pre></div>
+        <p></p>
+</div>
+<a name="registerUserValiable()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">registerUserValiable</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function registerUserValiable(name:String, func:Function):void</code><p> Register user defined variable "$[a-z_]+".
+          </p><p>
+          This function registers the variables that can use in CML-string. <br/>
+          </p>
+          <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:String</code> &mdash; The name of variable that appears like "$name" in CML-string.
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">func</span>:Function</code> &mdash; The callback function when the reference appears in sequence.<br/>
+          The type of callback is <code>function(fbr:CMLFiber):Number</code>. The argument gives a fiber that execute the sequence.
+          </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="CMLFiber.html" target="">CMLFiber</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>
+<div class='listing'><pre>
+// In the cml-string, you can use "$life" that returns Enemy's life.
+CMLSequence.registerUserValiable("life", referLife);
+
+function referLife(fbr:CMLFiber) : Number
+{
+    // Enemy class is your extention of CMLObject.
+    return Enemy(fbr.object).life;
+}
+</pre></div>
+         <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

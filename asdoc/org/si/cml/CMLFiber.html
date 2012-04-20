@@ -1,0 +1,511 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="CMLFiber,org.si.cml.CMLFiber,angle,barrage,hasDestFiber,isActive,isParent,object,sequence,string,target,maxLoopInFrame,maxStacCount,destroy,destroyAllChildren,destroyChild,findChild,getInterval,getLoopCounter,getVeriable" name="keywords">
+<title>org.si.cml.CMLFiber</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'CMLFiber - CannonML version 0.31 API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">CannonML version 0.31 API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?org/si/cml/CMLFiber.html&amp;org/si/cml/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;CMLFiber</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class CMLFiber"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">org.si.cml</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class CMLFiber</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">CMLFiber <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> org.si.cml.core.CMLListElem</td>
+</tr>
+</table>
+<p></p> Class for the fiber (Fiber is called as "micro thread" in some other languages). 
+      <p>
+      USAGE<br/>
+      1) Get the CMLFiber instance from CMLObject.execute().<br/>
+      2) CMLFiber.destroy(); stops this fiber.<br/>
+      3) CMLFiber.object; accesses to the CMLObject this fiber controls.<br/>
+      4) CMLFiber.target; accesses to the CMLObject this fiber targets to.<br/>
+      </p>
+     <p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="CMLObject.html#execute()" target="">CMLObject.execute()</a>
+<br>
+<a href="CMLFiber.html#destroy()" target="">CMLFiber.destroy()</a>
+<br>
+<a href="CMLFiber.html#object" target="">CMLFiber.object</a>
+<br>
+<a href="CMLFiber.html#target" target="">CMLFiber.target</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#angle">angle</a> : Number<div class="summaryTableDescription">[read-only] Angle of this fiber.</div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#barrage">barrage</a> : <a href="core/CMLBarrage.html">CMLBarrage</a>
+<div class="summaryTableDescription">[read-only] CMLBarrage that this fiber uses.</div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#hasDestFiber">hasDestFiber</a> : Boolean<div class="summaryTableDescription">[read-only] Does this fiber have any destruction fiber ? </div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#isActive">isActive</a> : Boolean<div class="summaryTableDescription">[read-only] Is active ? When this property shows false, this fiber is already destroyed.</div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#isParent">isParent</a> : Boolean<div class="summaryTableDescription">[read-only] Does this fiber have any children ? </div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#maxLoopInFrame">maxLoopInFrame</a> : int<div class="summaryTableDescription">[static][write-only] Maximum limitation of the executable looping count in 1 frame.</div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#maxStacCount">maxStacCount</a> : int<div class="summaryTableDescription">[static][write-only] Maximum limitation of the executable gosub nest count.</div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#object">object</a> : <a href="../cml/CMLObject.html">CMLObject</a>
+<div class="summaryTableDescription">[read-only] CMLObject that this fiber controls.</div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#sequence">sequence</a> : <a href="../cml/CMLSequence.html">CMLSequence</a>
+<div class="summaryTableDescription">[read-only] Sequence argument.</div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#string">string</a> : String<div class="summaryTableDescription">[read-only] String argument.</div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#target">target</a> : <a href="../cml/CMLObject.html">CMLObject</a>
+<div class="summaryTableDescription"> CMLObject that this fiber targets to.</div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#CMLFiber()">CMLFiber</a>()</div>
+<div class="summaryTableDescription"> <b>You cannot create new CMLFiber().</b> You can get CMLFiber instance only from CMLObject.execute().</div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#destroy()">destroy</a>():void</div>
+<div class="summaryTableDescription"> Stop the fiber.<br/>
+          This function stops all child fibers also.</div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#destroyAllChildren()">destroyAllChildren</a>():void</div>
+<div class="summaryTableDescription"> Stop all child fibers.</div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#destroyChild()">destroyChild</a>(child_id:int):Boolean</div>
+<div class="summaryTableDescription"> Stop child fiber with specifyed id.</div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#findChild()">findChild</a>(child_id:int):<a href="../cml/CMLFiber.html">CMLFiber</a>
+</div>
+<div class="summaryTableDescription"> Find child fiber with specifyed id.</div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getInterval()">getInterval</a>():int</div>
+<div class="summaryTableDescription"> Get the interval value (specifyed by "i" command) of this fiber.</div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getLoopCounter()">getLoopCounter</a>(nest:int = 0):int</div>
+<div class="summaryTableDescription"> Get the loop counter of this fiber.</div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getVeriable()">getVeriable</a>(idx:int):Number</div>
+<div class="summaryTableDescription"> Get the variables of the sequence "$1...$9".</div>
+</td><td class="summaryTableOwnerCol">CMLFiber</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="angle"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">angle</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>angle:Number</code>&nbsp;&nbsp;[read-only]<p> Angle of this fiber. The value is set by "h commands. </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get angle():Number</code>
+<br>
+</div>
+<a name="barrage"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">barrage</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>barrage:<a href="core/CMLBarrage.html">CMLBarrage</a></code>&nbsp;&nbsp;[read-only]<p> CMLBarrage that this fiber uses. </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get barrage():<a href="core/CMLBarrage.html">CMLBarrage</a></code>
+<br>
+</div>
+<a name="hasDestFiber"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasDestFiber</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>hasDestFiber:Boolean</code>&nbsp;&nbsp;[read-only]<p> Does this fiber have any destruction fiber ? </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get hasDestFiber():Boolean</code>
+<br>
+</div>
+<a name="isActive"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">isActive</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>isActive:Boolean</code>&nbsp;&nbsp;[read-only]<p> Is active ? When this property shows false, this fiber is already destroyed. </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get isActive():Boolean</code>
+<br>
+</div>
+<a name="isParent"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">isParent</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>isParent:Boolean</code>&nbsp;&nbsp;[read-only]<p> Does this fiber have any children ? </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get isParent():Boolean</code>
+<br>
+</div>
+<a name="maxLoopInFrame"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">maxLoopInFrame</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>maxLoopInFrame:int</code>&nbsp;&nbsp;[write-only]<p> Maximum limitation of the executable looping count in 1 frame. </p><p>The default value is <code>1024</code>.</p>
+<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set maxLoopInFrame(value:int):void</code>
+<br>
+</div>
+<a name="maxStacCount"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">maxStacCount</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>maxStacCount:int</code>&nbsp;&nbsp;[write-only]<p> Maximum limitation of the executable gosub nest count. </p><p>The default value is <code>64</code>.</p>
+<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set maxStacCount(value:int):void</code>
+<br>
+</div>
+<a name="object"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">object</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>object:<a href="../cml/CMLObject.html">CMLObject</a></code>&nbsp;&nbsp;[read-only]<p> CMLObject that this fiber controls. </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get object():<a href="../cml/CMLObject.html">CMLObject</a></code>
+<br>
+</div>
+<a name="sequence"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">sequence</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>sequence:<a href="../cml/CMLSequence.html">CMLSequence</a></code>&nbsp;&nbsp;[read-only]<p> Sequence argument. <br/>
+          This property is used in callback function of CMLSequence.registerUserCommand() with the option 'requireSequence' is true.<br/>
+          When the next statement of user command is not sequence. outputs parsing error. Or, when the next statement is '{.}', returns null.
+         </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get sequence():<a href="../cml/CMLSequence.html">CMLSequence</a></code>
+<br>
+</div>
+<a name="string"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">string</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>string:String</code>&nbsp;&nbsp;[read-only]<p> String argument. <br/>
+          This property is used in callback function of CMLSequence.registerUserCommand().<br/>
+          When the next statement of user command is not '...', this property shows null.
+          </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get string():String</code>
+<br>
+<br>
+<span class="label">Example</span>
+<br><div class='listing'><pre>
+    // Register the user command
+    CMLSequence.registerUserCommand("print", callbackPrint);
+
+    function callbackPrint(fbr:CMLFiber) {
+        // You can refer the string after user command.
+        _drawText(fbr.string);
+    }
+
+    // String comment after the user command in sequence.
+    // In this sequence, you call _drawText('Hello World !!').
+    var seq:CMLSequence = new CMLSequence("&print'Hello World !!'");
+</pre></div>
+         <p></p>
+</div>
+<a name="target"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">target</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>target:<a href="../cml/CMLObject.html">CMLObject</a></code>&nbsp;&nbsp;[read-write]<p> CMLObject that this fiber targets to. </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get target():<a href="../cml/CMLObject.html">CMLObject</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set target(value:<a href="../cml/CMLObject.html">CMLObject</a>):void</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="CMLFiber()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">CMLFiber</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function CMLFiber()</code><p> <b>You cannot create new CMLFiber().</b> You can get CMLFiber instance only from CMLObject.execute().
+          </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="CMLObject.html#execute()" target="">CMLObject.execute()</a>
+</div>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="destroy()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">destroy</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function destroy():void</code><p> Stop the fiber.<br/>
+          This function stops all child fibers also.
+         </p></div>
+<a name="destroyAllChildren()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">destroyAllChildren</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function destroyAllChildren():void</code><p> Stop all child fibers. </p></div>
+<a name="destroyChild()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">destroyChild</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function destroyChild(child_id:int):Boolean</code><p> Stop child fiber with specifyed id. </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">child_id</span>:int</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code></td>
+</tr>
+</table>
+</div>
+<a name="findChild()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">findChild</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function findChild(child_id:int):<a href="../cml/CMLFiber.html">CMLFiber</a></code><p> Find child fiber with specifyed id. </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">child_id</span>:int</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../cml/CMLFiber.html">CMLFiber</a></code></td>
+</tr>
+</table>
+</div>
+<a name="getInterval()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getInterval</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getInterval():int</code><p> Get the interval value (specifyed by "i" command) of this fiber. 
+          </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash; Interval.
+         </td>
+</tr>
+</table>
+</div>
+<a name="getLoopCounter()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getLoopCounter</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getLoopCounter(nest:int = 0):int</code><p> Get the loop counter of this fiber. 
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">nest</span>:int</code> (default = <code>0</code>)<code></code> &mdash; loop index. The index of 0 means the most inner loop, and 1 means the loop 1 outside.
+          </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash; Loop count. Start at 0, and end at [loop_count]-1.
+         </td>
+</tr>
+</table>
+</div>
+<a name="getVeriable()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getVeriable</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getVeriable(idx:int):Number</code><p> Get the variables of the sequence "$1...$9". 
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">idx</span>:int</code> &mdash; of variable.
+          </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; Value of variable.
+         </td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

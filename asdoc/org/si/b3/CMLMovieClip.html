@@ -1,0 +1,972 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="CMLMovieClip,org.si.b3.CMLMovieClip,HORIZONTAL,KEY_BUTTON0,KEY_BUTTON1,KEY_BUTTON2,KEY_BUTTON3,KEY_BUTTON4,KEY_BUTTON5,KEY_BUTTON6,KEY_BUTTON7,KEY_DOWN,KEY_ESCAPE,KEY_LEFT,KEY_RESET,KEY_RIGHT,KEY_START,KEY_SYSTEM,KEY_UP,VERTICAL,control,fps,pause,scene,screen,clearColor,scopeMargin,clearScreen,copyPixels,copyTexture,draw,drawTexture,fillRect,setSize,update" name="keywords">
+<title>org.si.b3.CMLMovieClip</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'CMLMovieClip - CannonML version 0.31 API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">CannonML version 0.31 API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?org/si/b3/CMLMovieClip.html&amp;org/si/b3/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;CMLMovieClip</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class CMLMovieClip"); titleBar_setSubNav(true,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">org.si.b3</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class CMLMovieClip</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">CMLMovieClip <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> flash.display.Bitmap</td>
+</tr>
+</table>
+<p></p> CMLMovieClip is a very simple framework for shmups ! <br/> 
+      This class manages scenes, controler, fps, screen and basic cannonML operations.
+     <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#clearColor">clearColor</a> : uint<div class="summaryTableDescription"> clear color </div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#control">control</a> : <a href="modules/CMLMovieClipControl.html">CMLMovieClipControl</a>
+<div class="summaryTableDescription"> Controler management module </div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#fps">fps</a> : <a href="modules/CMLMovieClipFPS.html">CMLMovieClipFPS</a>
+<div class="summaryTableDescription"> FPS management module </div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#pause">pause</a> : Boolean = false<div class="summaryTableDescription"> Pause flag </div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#scene">scene</a> : <a href="modules/CMLMovieClipScene.html">CMLMovieClipScene</a>
+<div class="summaryTableDescription"> Scene management module </div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#scopeMargin">scopeMargin</a> : Number<div class="summaryTableDescription"> margin of object's moving range.</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#screen">screen</a> : BitmapData = null<div class="summaryTableDescription"> Screen </div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#CMLMovieClip()">CMLMovieClip</a>(parent:DisplayObjectContainer, xpos:int, ypos:int, width:int, height:int, clearColor:int = 0x000000, addEnterFrameListener:Boolean = true, onFirstEnterFrame:Function = null, scopeMargin:Number = 32, scrollDirecition:String = "vertical")</div>
+<div class="summaryTableDescription"> constructor.</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clearScreen()">clearScreen</a>():<a href="../b3/CMLMovieClip.html">CMLMovieClip</a>
+</div>
+<div class="summaryTableDescription"> clear screen.</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#copyPixels()">copyPixels</a>(src:BitmapData, srcX:int, srcY:int, srcWidth:int, srcHeight:int, dstX:int, dstY:int):<a href="../b3/CMLMovieClip.html">CMLMovieClip</a>
+</div>
+<div class="summaryTableDescription"> call screen.copyPixels without Rectangle instance.</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#copyTexture()">copyTexture</a>(texture:<a href="CMLMovieClipTexture.html">CMLMovieClipTexture</a>, x:int, y:int, animIndex:int = 0):<a href="../b3/CMLMovieClip.html">CMLMovieClip</a>
+</div>
+<div class="summaryTableDescription"> copy CMLMovieClipTexture to the screen
+          </div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#draw()">draw</a>(src:IBitmapDrawable, xpos:Number, ypos:Number, scaleX:Number = 1, scaleY:Number = 1, angle:Number = 0, blendMode:String = null, colorTransform:ColorTransform = null):<a href="../b3/CMLMovieClip.html">CMLMovieClip</a>
+</div>
+<div class="summaryTableDescription"> call screen.draw without Matrix
+          </div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#drawTexture()">drawTexture</a>(texture:<a href="CMLMovieClipTexture.html">CMLMovieClipTexture</a>, xpos:Number, ypos:Number, scaleX:Number = 1, scaleY:Number = 1, angle:Number = 0, blendMode:String = null, colorTransform:ColorTransform = null, animIndex:int = 0):<a href="../b3/CMLMovieClip.html">CMLMovieClip</a>
+</div>
+<div class="summaryTableDescription"> draw CMLMovieClipTexture to the screen, you have to set CMLMovieClipTexture.drawable = true.</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#fillRect()">fillRect</a>(color:uint, x:int, y:int, width:int, height:int):<a href="../b3/CMLMovieClip.html">CMLMovieClip</a>
+</div>
+<div class="summaryTableDescription"> call screen.fillRect without Rectangle instance.</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setSize()">setSize</a>(width:int, height:int, clearColor:int = 0x000000, scopeMargin:Number = 32):<a href="../b3/CMLMovieClip.html">CMLMovieClip</a>
+</div>
+<div class="summaryTableDescription"> Set screen size
+          </div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#update()">update</a>(e:Event = null):void</div>
+<div class="summaryTableDescription"> update for one frame </div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#HORIZONTAL">HORIZONTAL</a> : String = "horizontal"<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#KEY_BUTTON0">KEY_BUTTON0</a> : uint = 4<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#KEY_BUTTON1">KEY_BUTTON1</a> : uint = 5<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#KEY_BUTTON2">KEY_BUTTON2</a> : uint = 6<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#KEY_BUTTON3">KEY_BUTTON3</a> : uint = 7<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#KEY_BUTTON4">KEY_BUTTON4</a> : uint = 8<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#KEY_BUTTON5">KEY_BUTTON5</a> : uint = 9<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#KEY_BUTTON6">KEY_BUTTON6</a> : uint = 10<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#KEY_BUTTON7">KEY_BUTTON7</a> : uint = 11<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#KEY_DOWN">KEY_DOWN</a> : uint = 1<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#KEY_ESCAPE">KEY_ESCAPE</a> : uint = 14<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#KEY_LEFT">KEY_LEFT</a> : uint = 2<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#KEY_RESET">KEY_RESET</a> : uint = 13<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#KEY_RIGHT">KEY_RIGHT</a> : uint = 3<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#KEY_START">KEY_START</a> : uint = 12<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#KEY_SYSTEM">KEY_SYSTEM</a> : uint = 15<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#KEY_UP">KEY_UP</a> : uint = 0<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#VERTICAL">VERTICAL</a> : String = "vertical"<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">CMLMovieClip</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="clearColor"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clearColor</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>clearColor:uint</code>&nbsp;&nbsp;[read-write]<p> clear color </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get clearColor():uint</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set clearColor(value:uint):void</code>
+<br>
+</div>
+<a name="control"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">control</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var control:<a href="modules/CMLMovieClipControl.html">CMLMovieClipControl</a></code><p> Controler management module </p></div>
+<a name="fps"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">fps</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var fps:<a href="modules/CMLMovieClipFPS.html">CMLMovieClipFPS</a></code><p> FPS management module </p></div>
+<a name="pause"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">pause</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var pause:Boolean = false</code><p> Pause flag </p></div>
+<a name="scene"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scene</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var scene:<a href="modules/CMLMovieClipScene.html">CMLMovieClipScene</a></code><p> Scene management module </p></div>
+<a name="scopeMargin"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scopeMargin</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>scopeMargin:Number</code>&nbsp;&nbsp;[read-write]<p> margin of object's moving range. </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get scopeMargin():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set scopeMargin(value:Number):void</code>
+<br>
+</div>
+<a name="screen"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">screen</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var screen:BitmapData = null</code><p> Screen </p></div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="CMLMovieClip()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">CMLMovieClip</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function CMLMovieClip(parent:DisplayObjectContainer, xpos:int, ypos:int, width:int, height:int, clearColor:int = 0x000000, addEnterFrameListener:Boolean = true, onFirstEnterFrame:Function = null, scopeMargin:Number = 32, scrollDirecition:String = "vertical")</code><p> constructor.
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">parent</span>:DisplayObjectContainer</code> &mdash; parent DisplayObjectContainer
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">xpos</span>:int</code> &mdash; position x
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">ypos</span>:int</code> &mdash; position y
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">width</span>:int</code> &mdash; screen width
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">height</span>:int</code> &mdash; screen height
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">clearColor</span>:int</code> (default = <code>0x000000</code>)<code></code> &mdash; clear color
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">addEnterFrameListener</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; add Event.ENTER_FRAME event listener.
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">onFirstEnterFrame</span>:Function</code> (default = <code>null</code>)<code></code> &mdash; margin of object's moving range.
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">scopeMargin</span>:Number</code> (default = <code>32</code>)<code></code> &mdash; scrolling direction CMLMovieClip.VERTICAL or CMLMovieClip.HORIZONTAL is available.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">scrollDirecition</span>:String</code> (default = "<code>vertical</code>")<code></code></td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="clearScreen()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clearScreen</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clearScreen():<a href="../b3/CMLMovieClip.html">CMLMovieClip</a></code><p> clear screen. fill all of screen by clearColor </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../b3/CMLMovieClip.html">CMLMovieClip</a></code></td>
+</tr>
+</table>
+</div>
+<a name="copyPixels()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">copyPixels</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function copyPixels(src:BitmapData, srcX:int, srcY:int, srcWidth:int, srcHeight:int, dstX:int, dstY:int):<a href="../b3/CMLMovieClip.html">CMLMovieClip</a></code><p> call screen.copyPixels without Rectangle instance. 
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">src</span>:BitmapData</code> &mdash; source BitmapData
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">srcX</span>:int</code> &mdash; x of copying area's left edge
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">srcY</span>:int</code> &mdash; y of copying area's top edge
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">srcWidth</span>:int</code> &mdash; width of copying area
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">srcHeight</span>:int</code> &mdash; height of copying area
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">dstX</span>:int</code> &mdash; paste x
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">dstY</span>:int</code> &mdash; paste y
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../b3/CMLMovieClip.html">CMLMovieClip</a></code></td>
+</tr>
+</table>
+</div>
+<a name="copyTexture()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">copyTexture</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function copyTexture(texture:<a href="CMLMovieClipTexture.html">CMLMovieClipTexture</a>, x:int, y:int, animIndex:int = 0):<a href="../b3/CMLMovieClip.html">CMLMovieClip</a></code><p> copy CMLMovieClipTexture to the screen
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">texture</span>:<a href="CMLMovieClipTexture.html">CMLMovieClipTexture</a></code> &mdash; CMLMovieClipTexture instance
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:int</code> &mdash; x of texture center
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:int</code> &mdash; y of texture center
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">animIndex</span>:int</code> (default = <code>0</code>)<code></code> &mdash; animation index
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../b3/CMLMovieClip.html">CMLMovieClip</a></code></td>
+</tr>
+</table>
+</div>
+<a name="draw()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">draw</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function draw(src:IBitmapDrawable, xpos:Number, ypos:Number, scaleX:Number = 1, scaleY:Number = 1, angle:Number = 0, blendMode:String = null, colorTransform:ColorTransform = null):<a href="../b3/CMLMovieClip.html">CMLMovieClip</a></code><p> call screen.draw without Matrix
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">src</span>:IBitmapDrawable</code> &mdash; source IBitmapDrawable
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">xpos</span>:Number</code> &mdash; left position x of source
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">ypos</span>:Number</code> &mdash; top position y of source
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">scaleX</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; horizontal scaling factor
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">scaleY</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; vertical scaling factor
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">angle</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; rotating angle in degree
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">blendMode</span>:String</code> (default = <code>null</code>)<code></code> &mdash; blend mode
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">colorTransform</span>:ColorTransform</code> (default = <code>null</code>)<code></code> &mdash; color transform
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../b3/CMLMovieClip.html">CMLMovieClip</a></code></td>
+</tr>
+</table>
+</div>
+<a name="drawTexture()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">drawTexture</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function drawTexture(texture:<a href="CMLMovieClipTexture.html">CMLMovieClipTexture</a>, xpos:Number, ypos:Number, scaleX:Number = 1, scaleY:Number = 1, angle:Number = 0, blendMode:String = null, colorTransform:ColorTransform = null, animIndex:int = 0):<a href="../b3/CMLMovieClip.html">CMLMovieClip</a></code><p> draw CMLMovieClipTexture to the screen, you have to set CMLMovieClipTexture.drawable = true.
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">texture</span>:<a href="CMLMovieClipTexture.html">CMLMovieClipTexture</a></code> &mdash; source IBitmapDrawable
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">xpos</span>:Number</code> &mdash; center position x of source
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">ypos</span>:Number</code> &mdash; center position y of source
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">scaleX</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; horizontal scaling factor
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">scaleY</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; vertical scaling factor
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">angle</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; rotating angle in degree
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">blendMode</span>:String</code> (default = <code>null</code>)<code></code> &mdash; blend mode
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">colorTransform</span>:ColorTransform</code> (default = <code>null</code>)<code></code> &mdash; color transform
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">animIndex</span>:int</code> (default = <code>0</code>)<code></code> &mdash; animation index
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../b3/CMLMovieClip.html">CMLMovieClip</a></code></td>
+</tr>
+</table>
+</div>
+<a name="fillRect()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">fillRect</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function fillRect(color:uint, x:int, y:int, width:int, height:int):<a href="../b3/CMLMovieClip.html">CMLMovieClip</a></code><p> call screen.fillRect without Rectangle instance. 
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:uint</code> &mdash; fill color
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:int</code> &mdash; x of left edge
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:int</code> &mdash; y of top edge
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">width</span>:int</code> &mdash; rectangle width
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">height</span>:int</code> &mdash; rectangle height
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../b3/CMLMovieClip.html">CMLMovieClip</a></code></td>
+</tr>
+</table>
+</div>
+<a name="setSize()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setSize</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setSize(width:int, height:int, clearColor:int = 0x000000, scopeMargin:Number = 32):<a href="../b3/CMLMovieClip.html">CMLMovieClip</a></code><p> Set screen size
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">width</span>:int</code> &mdash; screen width
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">height</span>:int</code> &mdash; screen height
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">clearColor</span>:int</code> (default = <code>0x000000</code>)<code></code> &mdash; clear color
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">scopeMargin</span>:Number</code> (default = <code>32</code>)<code></code> &mdash; margin of object's moving range.
+          </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../b3/CMLMovieClip.html">CMLMovieClip</a></code> &mdash; 
+                        this instance
+         
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="update()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">update</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function update(e:Event = null):void</code><p> update for one frame </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">e</span>:Event</code> (default = <code>null</code>)<code></code></td>
+</tr>
+</table>
+</div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="HORIZONTAL"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">HORIZONTAL</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const HORIZONTAL:String = "horizontal"</code>
+</div>
+<a name="KEY_BUTTON0"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">KEY_BUTTON0</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const KEY_BUTTON0:uint = 4</code>
+</div>
+<a name="KEY_BUTTON1"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">KEY_BUTTON1</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const KEY_BUTTON1:uint = 5</code>
+</div>
+<a name="KEY_BUTTON2"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">KEY_BUTTON2</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const KEY_BUTTON2:uint = 6</code>
+</div>
+<a name="KEY_BUTTON3"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">KEY_BUTTON3</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const KEY_BUTTON3:uint = 7</code>
+</div>
+<a name="KEY_BUTTON4"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">KEY_BUTTON4</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const KEY_BUTTON4:uint = 8</code>
+</div>
+<a name="KEY_BUTTON5"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">KEY_BUTTON5</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const KEY_BUTTON5:uint = 9</code>
+</div>
+<a name="KEY_BUTTON6"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">KEY_BUTTON6</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const KEY_BUTTON6:uint = 10</code>
+</div>
+<a name="KEY_BUTTON7"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">KEY_BUTTON7</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const KEY_BUTTON7:uint = 11</code>
+</div>
+<a name="KEY_DOWN"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">KEY_DOWN</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const KEY_DOWN:uint = 1</code>
+</div>
+<a name="KEY_ESCAPE"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">KEY_ESCAPE</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const KEY_ESCAPE:uint = 14</code>
+</div>
+<a name="KEY_LEFT"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">KEY_LEFT</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const KEY_LEFT:uint = 2</code>
+</div>
+<a name="KEY_RESET"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">KEY_RESET</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const KEY_RESET:uint = 13</code>
+</div>
+<a name="KEY_RIGHT"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">KEY_RIGHT</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const KEY_RIGHT:uint = 3</code>
+</div>
+<a name="KEY_START"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">KEY_START</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const KEY_START:uint = 12</code>
+</div>
+<a name="KEY_SYSTEM"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">KEY_SYSTEM</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const KEY_SYSTEM:uint = 15</code>
+</div>
+<a name="KEY_UP"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">KEY_UP</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const KEY_UP:uint = 0</code>
+</div>
+<a name="VERTICAL"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">VERTICAL</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const VERTICAL:String = "vertical"</code>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->
